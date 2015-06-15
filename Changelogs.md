@@ -1,3 +1,7 @@
+== 0.2.0
+
+* Reddit included
+
 == 0.1.9
 
 * Add `data-via` to allow `{ via: "MyTwitter" }`
