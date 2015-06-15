@@ -1,5 +1,3 @@
-// <a href="//www.reddit.com/submit" onclick="window.location = '//www.reddit.com/submit?url=' + encodeURIComponent(window.location); return false"> <img src="//www.redditstatic.com/spreddit1.gif" alt="submit to reddit" border="0" /> </a>
-
 window.SocialShareButton =
   openUrl : (url,popup) ->
     if popup == "true"
