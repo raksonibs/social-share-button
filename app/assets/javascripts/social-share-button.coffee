@@ -1,3 +1,5 @@
+// <a href="//www.reddit.com/submit" onclick="window.location = '//www.reddit.com/submit?url=' + encodeURIComponent(window.location); return false"> <img src="//www.redditstatic.com/spreddit1.gif" alt="submit to reddit" border="0" /> </a>
+
 window.SocialShareButton =
   openUrl : (url,popup) ->
     if popup == "true"
@@ -50,6 +52,8 @@ window.SocialShareButton =
         SocialShareButton.openUrl("http://www.delicious.com/save?url=#{url}&title=#{title}&jump=yes&pic=#{img}", popup)
       when "plurk"
         SocialShareButton.openUrl("http://www.plurk.com/?status=#{title}: #{url}&qualifier=shares", popup)
+      when "reddit"
+        SocialShareButton.openUrl("http://www.reddit.com/submit?url=#{url}", popup)
       when "pinterest"
         SocialShareButton.openUrl("http://www.pinterest.com/pin/create/button/?url=#{url}&media=#{img}&description=#{title}", popup)
       when "tumblr"
